@@ -158,8 +158,19 @@
                 
             </fieldset>
 
-            <button type="submit">Enviar</button> <!-- cria o botão que envia a informção do formulario -->
+            <fieldset>
+                <legend>Confirmações</legend>
 
+                <input type="checkbox" name="userLgpd" id="userLgpdTerm" value="accepted" required>
+                <label for="userLgpdTerm">Eu aceito participar da pesquisa.</label>
+                <br>
+                <input type="checkbox" name="userGetResult" id="getResult" value="accepted">
+                <label for="getResult">Desejo receber o resultado por email.</label>
+                <br>
+            </fieldset>
+
+            <button type="submit">Enviar</button> <!-- cria o botão que envia a informção do formulario -->
+            <button type="reset">limpar</button> 
              </form>
     </section>
 </body>
