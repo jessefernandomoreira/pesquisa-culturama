@@ -18,7 +18,7 @@
     <main>
         <header>
             <img src="img/logo-culturama.png" alt="logo-culturama">
-            <h1>Pesquisa Online</h1>
+            <h1>Pesquisa de opnião</h1>
         </header>
         <section>
             <form action="" method="get">
@@ -28,7 +28,7 @@
                 <legend>Dados Pessoais</legend>    
                 
                 <label for="name">Nome</label> <!-- coloca a indentificação do campo  -->
-                <input id="name" type="text" name="userName" required> <!-- cria a caixa de dialogo do formulario e informa que é uma informação obrigatoria -->
+                <input id="name" type="text" name="userName" required > <!-- cria a caixa de dialogo do formulario e informa que é uma informação obrigatoria -->
                 <br>
                 <label for="age">Idade</label>
                 <input id="age" type="number" name="userAge" min="12" max="100" required> <!--coloca um limite min e max de idade  -->
@@ -37,7 +37,7 @@
                 <input id="birthDate" type="date" name="userBirthDate"">
                 <br>
                 <label for="email">Email</label>
-                <input id="email" type="email" name="userEmail" placeholder="@email.com" required> <!-- indica qual o requerimento dessa caixa -->
+                <input id="email" type="email" name="userEmail" placeholder="@email.com" required > <!-- indica qual o requerimento dessa caixa -->
                 <br>
                 <label for="phoneNumber">Telefone</label>  
                 <input id="phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="123456789"> <!-- indica qual n°/letras queremos usar e a quantidade desses caracteris -->
@@ -65,7 +65,7 @@
                 <label for="maritalStatus">Estado Civil</label>
                 <select id="maritalStatus" name="userMaritalStatus">
 
-                    <option value="notInformed">Selecione...</option>
+                    <option value="">Selecione...</option>
                     <option value="casado">Casado</option>
                     <option value="Solteiro">Solteiro</option>
                     <option value="divorciado">Divorciado</option>
@@ -74,7 +74,7 @@
                 <br>
                 <label for="state">Estado</label>
                 <select id="state" name="userState" required>
-                    <option value="notInformed">Selecione...</option>
+                    <option value="">Selecione...</option>
                     <option value="acre">Acre</option>
                     <option value="alagoas">Alagoas</option>
                     <option value="amapa">Amapá</option>
