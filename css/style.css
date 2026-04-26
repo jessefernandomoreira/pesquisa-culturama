@@ -19,7 +19,9 @@
     --cor-bordas: #343434;
   }
 }
-
+html{
+  font-size: 100%;
+}
 body{
     background-color: var(--cor-fundo-body);
     font-family: "Work Sans"  , sans-serif;
@@ -44,6 +46,7 @@ header img{
 h1{
   font-family: "Fjalla One", sans-serif;
   text-align: center;
+  font-size: 2rem;
 }
 
 form{
@@ -66,6 +69,7 @@ legend{
 p{
   margin-bottom: 10px;
   font-weight: bold;
+  font-size: 2rem;
 }
 label{
   display: inline-block;
