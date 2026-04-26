@@ -5,9 +5,28 @@
     box-sizing: border-box;/* evita ter que calcular espessura de borda fazendo automaticamente */
 }
 
+:root{
+    --cor-fundo-body: #f9f9f9;
+    --cor-texto: #333333;
+    --cor-fundo-form: #ffffff;
+    --cor-bordas: #cccccc;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cor-fundo-body: #333333;
+    --cor-texto: #ffffff;
+    --cor-fundo-form: #535353;
+    --cor-bordas: #343434;
+  }
+}
+html{
+  font-size: 100%;
+}
 body{
-    background-color: #f9f9f9;
+    background-color: var(--cor-fundo-body);
     font-family: "Work Sans"  , sans-serif;
+    color: var(--cor-texto);
+    outline: none;
 }
 
 main{
@@ -27,17 +46,18 @@ header img{
 h1{
   font-family: "Fjalla One", sans-serif;
   text-align: center;
+  font-size: 2rem;
 }
 
 form{
-  background-color: #ffffff;
+  background-color:var(--cor-fundo-form);
   padding: 15px;
   border-radius:10px ;
   margin-bottom: 100px;
 }
 fieldset{
   padding: 15px;
-  border: 1px solid #cccccc;
+  border: 1px solid var(--cor-bordas);
   border-radius: 5px;
   margin-bottom: 15px;
 }
@@ -49,6 +69,7 @@ legend{
 p{
   margin-bottom: 10px;
   font-weight: bold;
+  font-size: 2rem;
 }
 label{
   display: inline-block;
@@ -62,8 +83,14 @@ input, select, textarea{
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-  border: 2px solid #cccccc;
+  border: 2px solid var(--cor-bordas);
   border-radius: 5px;
+  background-color: var(--cor-fundo-form);
+  color: var(--cor-texto); 
+}
+small{
+  display: inline-block;
+  margin-bottom: 15px;
 }
 small{
   display: inline-block;
