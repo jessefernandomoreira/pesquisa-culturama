@@ -4,27 +4,27 @@
     padding: 0;
     box-sizing: border-box;/* evita ter que calcular espessura de borda fazendo automaticamente */
 }
-@media (forced-colors: active) {
-  /* O navegador ajusta as cores automaticamente para garantir legibilidade */
-}
+
 :root{
-   --cor-fundo-body: #f9f9f9;
+    --cor-fundo-body: #f9f9f9;
     --cor-texto: #333333;
     --cor-fundo-form: #ffffff;
     --cor-bordas: #cccccc;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --cor-fundo-body: #121212;
+    --cor-fundo-body: #333333;
     --cor-texto: #ffffff;
-    --cor-fundo-form: #1e1e1e;
-    --cor-bordas: #444444;
+    --cor-fundo-form: #535353;
+    --cor-bordas: #343434;
   }
 }
 
 body{
-    background-color: #f9f9f9;
+    background-color: var(--cor-fundo-body);
     font-family: "Work Sans"  , sans-serif;
+    color: var(--cor-texto);
+    outline: none;
 }
 
 main{
@@ -47,14 +47,14 @@ h1{
 }
 
 form{
-  background-color: #ffffff;
+  background-color:var(--cor-fundo-form);
   padding: 15px;
   border-radius:10px ;
   margin-bottom: 100px;
 }
 fieldset{
   padding: 15px;
-  border: 1px solid #cccccc;
+  border: 1px solid var(--cor-bordas);
   border-radius: 5px;
   margin-bottom: 15px;
 }
@@ -75,8 +75,11 @@ input, select, textarea{
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-  border: 2px solid #cccccc;
+  border: 2px solid var(--cor-bordas);
   border-radius: 5px;
+  background-color: var(--cor-fundo-form);
+  color: var(--cor-texto);
+  
 }
 textarea{
   min-height: 100px;
