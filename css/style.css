@@ -4,6 +4,23 @@
     padding: 0;
     box-sizing: border-box;/* evita ter que calcular espessura de borda fazendo automaticamente */
 }
+@media (forced-colors: active) {
+  /* O navegador ajusta as cores automaticamente para garantir legibilidade */
+}
+:root{
+   --cor-fundo-body: #f9f9f9;
+    --cor-texto: #333333;
+    --cor-fundo-form: #ffffff;
+    --cor-bordas: #cccccc;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cor-fundo-body: #121212;
+    --cor-texto: #ffffff;
+    --cor-fundo-form: #1e1e1e;
+    --cor-bordas: #444444;
+  }
+}
 
 body{
     background-color: #f9f9f9;
